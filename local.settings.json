@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "WEBSITE_SLOT_NAME": "Production",
+    "FUNCTIONS_EXTENSION_VERSION": "~1",
+    "ScmType": "None",
+    "WEBSITE_AUTH_ENABLED": "False",
+    "REMOTEDEBUGGINGVERSION": "15.0.26730.8",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "144f2c91-bd47-43fd-8f75-7b89c8afd340",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=fsharpcloudstorage;AccountKey=IaxhVQWMdVyX8KDRf4AMoSK7L66Q8FHYaWrqR/zRL+yPBG3jNBFLor9ZDqzmo37RHH7Lj8aLJ0dOIRht+z+wSQ==",
+    "WEBSITE_NODE_DEFAULT_VERSION": "6.5.0",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=fsharpcloudstorage;AccountKey=IaxhVQWMdVyX8KDRf4AMoSK7L66Q8FHYaWrqR/zRL+yPBG3jNBFLor9ZDqzmo37RHH7Lj8aLJ0dOIRht+z+wSQ==",
+    "WEBSITE_CONTENTSHARE": "fsharpcloudstorage9a33",
+    "WEBSITE_SITE_NAME": "fsharpcloudstorage",
+    "ConnectionStringToUse": "AzureWebJobsStorage",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=fsharpcloudstorage;AccountKey=IaxhVQWMdVyX8KDRf4AMoSK7L66Q8FHYaWrqR/zRL+yPBG3jNBFLor9ZDqzmo37RHH7Lj8aLJ0dOIRht+z+wSQ=="
+  }
+}
