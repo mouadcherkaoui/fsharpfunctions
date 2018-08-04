@@ -37,7 +37,7 @@ let Run(req: HttpRequestMessage, log: TraceWriter, username: string, outTable: I
         // point to the connection string to use
         let GetStorageAccount:CloudStorageAccount =    // le mot clef let c'est pour les declarations autrement c'est pour associer un nom a une valeur 
                                                        // et toutes les valeurs sont immutable cad inchangeable une fois on affecte une valeur on ne peu la changer  
-            CloudConfigurationManager.GetSetting("ConnectionStringToUse")    
+            ConfigurationManager.AppSettings.["ConnectionStringToUse"]
             |> fun s -> ConfigurationManager.ConnectionStrings.[s].ConnectionString // le symbole |> c'est ce qu'on appel un pipe ca sert a utiliser le resultat "sortie" d'une fonction
             |> CloudStorageAccount.Parse            // comme valeur d'entree de la suivante 
 

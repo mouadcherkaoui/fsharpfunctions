@@ -33,9 +33,8 @@ let Run(req: HttpRequestMessage, log: TraceWriter, name: string) =
                 | None -> ""
                 
         let getStorageAccount = 
-            CloudConfigurationManager.GetSetting("ConnectionStringToUse")
+            ConfigurationManager.AppSettings.["ConnectionStringToUse"]
             |> fun s -> 
-                log.Info(s)
                 ConfigurationManager.ConnectionStrings.[s].ConnectionString
             |> CloudStorageAccount.Parse    
         

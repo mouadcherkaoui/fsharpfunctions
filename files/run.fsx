@@ -34,8 +34,8 @@ let Run(req: HttpRequestMessage, log: TraceWriter, name: string) =
             "F# HTTP trigger function processed a request.")
         
         let GetTable tableName= 
-            CloudConfigurationManager.GetSetting "ConnectionStringToUse"
-            |> CloudConfigurationManager.GetSetting
+            ConfigurationManager.AppSettings.["ConnectionStringToUse"]
+            |> fun s -> ConfigurationManager.ConnectionStrings.[s]
             |> CloudStorageAccount.Parse
             |> fun account -> account.CreateCloudTableClient()
             |> fun client -> client.GetTableReference tableName
